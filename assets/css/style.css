@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'LT Wave';
+    src: url(../font/LTWave-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'LT Wave';
+    letter-spacing: 1px;
+}
+.customise-background {
+    background: url(../images/background-image.jpg);
+    width: 100%;
+    height: 640px;
+    background-size: cover;
+    background-position: right;
+}
+.customise-background::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.navbar-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.2s;
+}
+/* .show {
+    background-color: rgba(0, 0, 0, 0.9);
+} */
+.customise-navlinks li a {
+    position: relative;
+    /* width: fit-content; */
+}
+.customise-navlinks li a::after {
+    content: '';
+    position: absolute;
+    background-color: #D4155B;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.3s;
+}
+.customise-navlinks li a:hover {
+    color: #D4155B !important;
+}
+.customise-navlinks li a:hover::after {
+    width: 100%;
+}
+.customise-navbtn,
+.customise-headerbtn {
+    background-color: #D4155B;
+    padding: 8px 10px;
+    transition: 0.3s ease-in-out;
+}
+.customise-navbtn:hover {
+    background-color: #ad2e5c;
+}
+.customise-headerbtn:hover {
+    background-color: #ad2e5c;
+    transform: scale(1.1);
+}
+.customise-heading,
+.customise-about-heading {
+    color: #D4155B;
+}
+.customise-about-heading {
+    width: fit-content;
+}
+.custom-zindex {
+    z-index: 1;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.customise-about {
+    background-color: #D4155B;
+}
+.about-button {
+    color: #D4155B;
+    transition: 0.3s ease-in-out;
+}
+.about-button:hover {
+    color: #D4155B;
+    transform: scale(1.04);
+}
+
+.service-tagline {
+    background: url(../images/service-image.jpg);
+    width: 100%;
+    height: 422px;
+    background-size: cover;
+    background-position: right;
+}
+.service-tagline-two {
+    background: url(../images/service-image\ ii.jpg);
+    width: 100%;
+    height: 422px;
+    background-size: cover;
+}
+.tagline-bg {
+    width: 100%;
+    height: 422px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.customise-carousel-img img {
+    width: 340px;
+}
+
+.product-card {
+    width: 340px;
+    height: 400px;
+    background-color: #D4155B;
+    position: relative;
+}
+.product-card::after {
+    content: 'Tk 1950/-';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85px;
+    height: 70px;
+    padding: 3px;
+    color: #D4155B;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 0 5px 0 85%;
+}
+
+.footer-about {
+    max-width: 320px;
+}
+.footer-about p {
+    font-size: 15px;
+}
+.footer-heading,
+.customise-copyright {
+    color: #D4155B;
+}
+
+@media (max-width: 1200px) {
+    footer {
+        text-align: center !important;
+    }
+}
+@media (max-width: 996px) {
+    .customise-about {
+        text-align: center;
+    }
+    .customise-about-heading {
+        margin: 0 auto;
+    }
+    .customise-services {
+        font-size: 1.2vw !important;
+    }
+}
+@media (max-width: 450px) {
+    .customise-about {
+        font-size: 3vw;
+    }
+}
