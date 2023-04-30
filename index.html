@@ -45,8 +45,8 @@
   </head>
   <body>
     <header class="customise-background">
-      <nav class="navbar fixed-top navbar-expand-lg px-3 py-1">
-        <div class="container">
+      <nav class="navbar fixed-top navbar-expand-lg px-xl-3 py-1">
+        <div class="container-fluid px-md-5">
           <a href="#" class="navbar-brand">
             <img src="./assets/logo/Logo.png" alt="BeautyLab Salon Logo" />
           </a>
@@ -67,26 +67,26 @@
             <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto p-4 text-center customise-navlinks">
-              <li class="nav-item me-4 me-md-2">
+            <ul class="navbar-nav p-4 ms-auto customise-navlinks">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">Home</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">About</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">Our Services</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">Gallery</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">Products</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto pe-md-2">
                 <a href="#" class="nav-link text-white">Contact</a>
               </li>
-              <li class="nav-item me-4 me-md-2">
+              <li class="nav-item mx-auto">
                 <button
                   type="button"
                   class="text-white rounded border-0 customise-navbtn"
@@ -100,7 +100,7 @@
       </nav>
       <section class="container">
         <div
-          class="position-absolute top-50 text-white ps-2 ps-md-5 ps-lg-5 custom-zindex"
+          class="position-absolute text-white ps-2 ps-md-5 customise-header-tagline"
         >
           <h1>
             WELCOME TO <br />
@@ -379,14 +379,15 @@
     <!-- main end -->
     <!-- footer start -->
     <footer>
-      <section class="container">
+      <section class="container-fluid">
         <div class="mt-5 d-flex gap-4 flex-wrap justify-content-between">
           <div class="text-center m-2 mx-auto footer-about">
-            <img
-              class="img-fluid"
-              src="./assets/logo/Logo ii.png"
-              alt="BeautyLab Salon Logo"
-            />
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="./assets/logo/Logo ii.png"
+                alt="BeautyLab Salon Logo"
+            /></a>
             <p>
               BeautyLab is a professional beauty specialist salon. BeautyLab
               salon offers a variety of services designed to help you look and
@@ -397,16 +398,20 @@
               relaxing environment.
             </p>
           </div>
-          <div class="m-2 mx-auto">
+          <div class="m-2 mx-auto customise-footerlinks">
             <h5 class="mb-4 footer-heading">Our Services</h5>
-            <p class="mb-0">Hair & Color</p>
-            <p class="mb-0">Blowout Bar</p>
-            <p class="mb-0">Nails</p>
-            <p class="mb-0">Wax</p>
-            <p class="mb-0">Spa</p>
-            <p class="mb-0">Bridal</p>
+            <div class="d-flex flex-column">
+              <a class="text-decoration-none text-dark" href="#"
+                >Hair & Color</a
+              >
+              <a class="text-decoration-none text-dark" href="#">Blowout Bar</a>
+              <a class="text-decoration-none text-dark" href="#">Nails</a>
+              <a class="text-decoration-none text-dark" href="#">Wax</a>
+              <a class="text-decoration-none text-dark" href="#">Spa</a>
+              <a class="text-decoration-none text-dark" href="#">Bridal</a>
+            </div>
           </div>
-          <div class="m-2 mx-auto">
+          <div class="m-2 mx-auto customise-footerlinks">
             <h5 class="mb-4 footer-heading">Important Links</h5>
             <div class="d-flex flex-column">
               <a class="text-decoration-none text-dark" href="#">Home</a>
@@ -420,7 +425,7 @@
             </div>
           </div>
           <div class="m-2 mx-auto">
-            <h5 class="mb-4 footer-heading">Contact</h5>
+            <h5 class="mb-4 footer-heading-contact">Contact</h5>
             <div class="d-flex gap-2 align-items-start">
               <img
                 class="img-fluid"
@@ -433,25 +438,40 @@
               </p>
             </div>
             <div class="d-flex gap-2 align-items-start">
-              <img
-                class="img-fluid"
-                src="./assets/icons/phone.svg"
-                alt="Phone Icon"
-              />
-              <p>
-                +8801711-000000 <br />
-                +8801911-000000
-              </p>
+              <a href="tel:+8801711000000">
+                <img
+                  class="img-fluid"
+                  src="./assets/icons/phone.svg"
+                  alt="Phone Icon"
+                />
+              </a>
+              <div class="d-flex flex-column">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="tel:+8801711000000"
+                  >+8801711-000000
+                </a>
+                <a
+                  class="text-decoration-none text-dark"
+                  href="tel:+8801911000000"
+                  >+8801911-000000</a
+                >
+              </div>
             </div>
-            <div class="d-flex gap-2 align-items-start">
-              <img
-                class="img-fluid"
-                src="./assets/icons/mail.svg"
-                alt="Mail Icon"
-              />
-              <p>contact@beautylab.com</p>
+            <div class="mt-2">
+              <a
+                class="text-decoration-none text-dark"
+                href="mailto:contact@beautylab.com"
+              >
+                <img
+                  class="img-fluid pe-2"
+                  src="./assets/icons/mail.svg"
+                  alt="Mail Icon"
+                />
+                contact@beautylab.com</a
+              >
             </div>
-            <div class="">
+            <div class="mt-3 footer-socialicons">
               <a href="#"
                 ><img
                   class="img-fluid pe-2"
