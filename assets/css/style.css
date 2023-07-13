@@ -1,168 +1,179 @@
 @font-face {
-    font-family: 'LT Wave';
-    src: url(../font/LTWave-Bold.ttf);
+  font-family: "LT Wave";
+  src: url(../font/LTWave-Bold.ttf);
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'LT Wave';
-    letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LT Wave";
+  letter-spacing: 1px;
 }
 .customise-background {
-    background: url(../images/background-image.jpg);
-    width: 100%;
-    height: 740px;
-    background-size: cover;
-    background-position: right;
+  background: url(../images/background-image.jpg);
+  width: 100%;
+  height: 740px;
+  background-size: cover;
+  background-position: right;
 }
 .customise-background::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 740px;
-    background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .navbar-bg {
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.2s;
 }
-/* .show {
-    background-color: rgba(0, 0, 0, 0.9);
-} */
-
+.customise-togglebtn {
+  padding: 9px 10px 5px;
+  color: #d4155b;
+  background-color: #fff;
+  box-shadow: none !important;
+}
 .customise-navlinks li a {
-    position: relative;
-    width: fit-content;
+  position: relative;
+  width: fit-content;
 }
 .customise-navlinks li a::after {
-    content: '';
-    position: absolute;
-    background-color: #D4155B;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 5px;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  background-color: #d4155b;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 5px;
+  transition: 0.3s;
 }
 .customise-navlinks li a:hover {
-    color: #D4155B !important;
+  color: #d4155b !important;
 }
 .customise-navlinks li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 .customise-navbtn,
 .customise-headerbtn {
-    background-color: #D4155B;
-    padding: 8px 10px;
-    transition: 0.3s ease-in-out;
+  background-color: #d4155b;
+  padding: 8px 10px;
+  transition: 0.3s ease-in-out;
 }
 .customise-navbtn:hover {
-    background-color: #ad2e5c;
+  background-color: #ad2e5c;
 }
 .customise-headerbtn:hover {
-    background-color: #ad2e5c;
-    transform: scale(1.1);
+  background-color: #ad2e5c;
+  transform: scale(1.1);
 }
 .customise-heading,
 .customise-about-heading {
-    color: #D4155B;
+  color: #d4155b;
 }
 .customise-about-heading {
-    width: fit-content;
+  width: fit-content;
 }
 .customise-header-tagline {
-    top: 340px;
-    z-index: 1;
+  top: 340px;
+  z-index: 1;
 }
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
+
 .customise-about {
-    background-color: #D4155B;
+  background-color: #d4155b;
 }
 .about-button {
-    color: #D4155B;
-    transition: 0.3s ease-in-out;
+  color: #d4155b;
+  transition: 0.3s ease-in-out;
 }
 .about-button:hover {
-    color: #D4155B;
-    transform: scale(1.04);
+  color: #d4155b;
+  transform: scale(1.04);
 }
 
 .service-tagline {
-    background: url(../images/service-image.jpg);
-    width: 100%;
-    height: 422px;
-    background-size: cover;
-    background-position: right;
+  background: url(../images/service-image.jpg);
+  width: 100%;
+  height: 422px;
+  background-size: cover;
+  background-position: right;
 }
 .service-tagline-two {
-    background: url(../images/service-image\ ii.jpg);
-    width: 100%;
-    height: 422px;
-    background-size: cover;
+  background: url(../images/service-image\ ii.jpg);
+  width: 100%;
+  height: 422px;
+  background-size: cover;
 }
 .tagline-bg {
-    width: 100%;
-    height: 422px;
-    background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 422px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.customise-carousel-img img {
-    width: 340px;
+.carousel-one img {
+  border-radius: 10px;
 }
-
+.owl-dots {
+  margin-top: 24px !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #d9d9d9 !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #d4155b !important;
+}
 .product-card {
-    width: 340px;
-    height: 400px;
-    background-color: #D4155B;
-    position: relative;
+  max-width: 490px;
+  height: 500px;
+  background-color: #d4155b;
+  position: relative;
+  border-radius: 10px;
+}
+.product-card img {
+  max-height: 400px;
 }
 .product-card::after {
-    content: 'Tk 1950/-';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 85px;
-    height: 70px;
-    padding: 3px;
-    color: #D4155B;
-    background-color: whitesmoke;
-    text-align: center;
-    border-radius: 0 5px 0 85%;
+  content: "Tk 1950/-";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85px;
+  height: 85px;
+  padding: 4px 2px;
+  color: #d4155b;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 90% 10% 0% 100% / 0% 10% 90% 100%;
 }
 
 .footer-about {
-    max-width: 320px;
+  max-width: 320px;
 }
 .footer-about p {
-    font-size: 15px;
+  font-size: 15px;
 }
 .footer-heading,
 .footer-heading-contact,
 .customise-copyright {
-    color: #D4155B;
+  color: #d4155b;
 }
-
 @media (max-width: 996px) {
-    .customise-about {
-        text-align: center;
-    }
-    .customise-about-heading {
-        margin: 0 auto;
-    }
-    .customise-services {
-        font-size: 1.2vw !important;
-    }
+  .customise-about {
+    text-align: center;
+  }
+  .customise-about-heading {
+    margin: 0 auto;
+  }
+  .customise-services {
+    font-size: 1.2vw !important;
+  }
 }
 @media (max-width: 450px) {
-    .customise-about {
-        font-size: 3vw;
-    }
-    .customise-footerlinks,
-    .footer-heading-contact,
-    .footer-socialicons {
-        text-align: center !important;
-    }
+  .customise-about {
+    font-size: 3vw;
+  }
+  .customise-footerlinks,
+  .footer-heading-contact,
+  .footer-socialicons {
+    text-align: center !important;
+  }
 }

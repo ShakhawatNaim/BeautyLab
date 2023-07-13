@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="canonical"
-      href="https://shakhawatnaim.github.io/BeautyLabwithBootstrap/"
-    />
+    <link rel="canonical" href="https://shakhawatnaim.github.io/BeautyLab/" />
     <title>BeautyLab Salon</title>
     <meta
       name="description"
@@ -25,11 +22,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://shakhawatnaim.github.io/BeautyLabwithBootstrap/"
+      content="https://shakhawatnaim.github.io/BeautyLab/"
     />
     <meta
       property="og:image"
-      content="https://shakhawatnaim.github.io/BeautyLabwithBootstrap/assets/images/about-image.jpg"
+      content="https://shakhawatnaim.github.io/BeautyLab/assets/images/about-image.jpg"
     />
     <meta
       property="og:description"
@@ -37,10 +34,20 @@
     />
     <link
       rel="shortcut icon"
-      href="./assets/favicon/favicon.png"
+      href="./assets/images/favicon/favicon.png"
       type="image/x-icon"
     />
+    <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/af25134cca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel stylesheet -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <!-- custom stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -48,23 +55,21 @@
       <nav class="navbar fixed-top navbar-expand-lg px-xl-3 py-1">
         <div class="container-fluid px-md-5">
           <a href="#" class="navbar-brand">
-            <img src="./assets/logo/Logo.png" alt="BeautyLab Salon Logo" />
+            <img
+              src="./assets/images/logo/Logo.png"
+              alt="BeautyLab Salon Logo"
+            />
           </a>
           <button
             type="button"
-            class="navbar-toggler border-0"
+            class="navbar-toggler fs-4 border-0 customise-togglebtn"
             data-bs-target="#navbarNav"
             data-bs-toggle="collapse"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle Navbar"
           >
-            <img
-              class="px-2 py-1 bg-white rounded"
-              src="./assets/icons/align-right.svg"
-              alt="Toggle Button"
-            />
-            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-align-right"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav p-4 ms-auto customise-navlinks">
@@ -148,12 +153,8 @@
               labore!
             </p>
             <button class="btn bg-light about-button">
-              MORE ABOUT US THIS WAY
-              <img
-                class="img-fluid"
-                src="./assets/icons/arrow-right.svg"
-                alt="Arrow Right Icon"
-              />
+              MORE ABOUT US THIS WAYS
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -171,7 +172,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/hair.png"
+              src="./assets/images/icons/hair.png"
               alt="Hair Cutter Icon"
             />
             <p class="mt-3">HAIR+COLOR</p>
@@ -179,7 +180,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/blowout.png"
+              src="./assets/images/icons/blowout.png"
               alt="Hair Dryer Icon"
             />
             <p class="mt-3">BLOWOUT BAR</p>
@@ -187,7 +188,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/nails.png"
+              src="./assets/images/icons/nails.png"
               alt="Nail Polish Icon"
             />
             <p class="mt-3">NAILS</p>
@@ -195,7 +196,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/wax.png"
+              src="./assets/images/icons/wax.png"
               alt="Wax Icon"
             />
             <p class="mt-3">WAX</p>
@@ -203,7 +204,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/spa.png"
+              src="./assets/images/icons/spa.png"
               alt="Towel Icon"
             />
             <p class="mt-3">SPA</p>
@@ -211,7 +212,7 @@
           <div>
             <img
               class="img-fluid"
-              src="./assets/icons/bridal.png"
+              src="./assets/images/icons/bridal.png"
               alt="Lipstick Icon"
             />
             <p class="mt-3">BRIDAL</p>
@@ -239,138 +240,198 @@
       </section>
       <!-- service section end -->
       <!-- gallery section start -->
-      <section class="container-xl">
+      <section class="container">
         <h5 class="text-center my-5">GALLERY</h5>
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                class="d-flex justify-content-between customise-carousel-img"
-              >
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image ii.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image iii.jpg"
-                  alt="Gallery Image"
-                />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="d-flex justify-content-between customise-carousel-img"
-              >
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image iv.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image v.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image vi.jpg"
-                  alt="Gallery Image"
-                />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="d-flex justify-content-between customise-carousel-img"
-              >
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image vii.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image viii.jpg"
-                  alt="Gallery Image"
-                />
-                <img
-                  class="img-fluid m-1 rounded"
-                  src="./assets/images/g-image ix.jpg"
-                  alt="Gallery Image"
-                />
-              </div>
-            </div>
+        <div class="owl-carousel owl-theme carousel-one">
+          <div class="item">
+            <img
+              src="./assets/images/g-image.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="item">
+            <img
+              src="./assets/images/g-image ii.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image iii.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image iv.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image v.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image vi.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image vii.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image viii.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/images/g-image ix.jpg"
+              alt="Gallery Image"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </section>
       <!-- gallery section end -->
       <!-- product section start -->
       <section class="container">
         <h5 class="text-center my-5">PRODUCTS</h5>
-        <div
-          class="d-flex flex-wrap gap-4 justify-content-center align-items-center"
-        >
-          <div
-            class="d-flex flex-column align-items-center justify-content-center rounded product-card"
-          >
-            <img
-              class="img-fluid"
-              src="./assets/images/product image.png"
-              alt="Anti-aging Cream Image"
-            />
-            <p class="text-center text-white">
-              Skin care Anti-aging cream Lotion
-            </p>
+        <div class="owl-carousel owl-theme carousel-two">
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image.png"
+                alt="Anti-aging Cream Image"
+              />
+              <p class="text-center text-white">
+                Skin care Anti-aging cream Lotion
+              </p>
+            </div>
           </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center rounded product-card"
-          >
-            <img
-              class="img-fluid"
-              src="./assets/images/product image ii.png"
-              alt="Moisturizing Cream Image"
-            />
-            <p class="text-center text-white mt-2">Moisturizing Cream</p>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image ii.png"
+                alt="Moisturizing Cream Image"
+              />
+              <p class="text-center text-white mt-2">Moisturizing Cream</p>
+            </div>
           </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center rounded product-card"
-          >
-            <img
-              class="img-fluid"
-              src="./assets/images/product image iii.png"
-              alt="Skin care Cream Image"
-            />
-            <p class="text-center text-white">
-              Lotion Skin care Cream Exfoliation
-            </p>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image iii.png"
+                alt="Skin care Cream Image"
+              />
+              <p class="text-center text-white">
+                Lotion Skin care Cream Exfoliation
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image.png"
+                alt="Anti-aging Cream Image"
+              />
+              <p class="text-center text-white">
+                Skin care Anti-aging cream Lotion
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image ii.png"
+                alt="Moisturizing Cream Image"
+              />
+              <p class="text-center text-white mt-2">Moisturizing Cream</p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image iii.png"
+                alt="Skin care Cream Image"
+              />
+              <p class="text-center text-white">
+                Lotion Skin care Cream Exfoliation
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image.png"
+                alt="Anti-aging Cream Image"
+              />
+              <p class="text-center text-white">
+                Skin care Anti-aging cream Lotion
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image ii.png"
+                alt="Moisturizing Cream Image"
+              />
+              <p class="text-center text-white mt-2">Moisturizing Cream</p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center product-card"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/images/product image iii.png"
+                alt="Skin care Cream Image"
+              />
+              <p class="text-center text-white">
+                Lotion Skin care Cream Exfoliation
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -385,7 +446,7 @@
             <a href="#"
               ><img
                 class="img-fluid"
-                src="./assets/logo/Logo ii.png"
+                src="./assets/images/logo/Logo ii.png"
                 alt="BeautyLab Salon Logo"
             /></a>
             <p>
@@ -429,7 +490,7 @@
             <div class="d-flex gap-2 align-items-start">
               <img
                 class="img-fluid"
-                src="./assets/icons/map-pin.svg"
+                src="./assets/images/icons/map-pin.svg"
                 alt="Location Icon"
               />
               <p>
@@ -441,7 +502,7 @@
               <a href="tel:+8801711000000">
                 <img
                   class="img-fluid"
-                  src="./assets/icons/phone.svg"
+                  src="./assets/images/icons/phone.svg"
                   alt="Phone Icon"
                 />
               </a>
@@ -465,7 +526,7 @@
               >
                 <img
                   class="img-fluid pe-2"
-                  src="./assets/icons/mail.svg"
+                  src="./assets/images/icons/mail.svg"
                   alt="Mail Icon"
                 />
                 contact@beautylab.com</a
@@ -475,25 +536,25 @@
               <a href="#"
                 ><img
                   class="img-fluid pe-2"
-                  src="./assets/icons/facebook.svg"
+                  src="./assets/images/icons/facebook.svg"
                   alt="Facebook Icon"
               /></a>
               <a href="#"
                 ><img
                   class="img-fluid pe-2"
-                  src="./assets/icons/twitter.svg"
+                  src="./assets/images/icons/twitter.svg"
                   alt="Twitter Icon"
               /></a>
               <a href="#"
                 ><img
                   class="img-fluid pe-2"
-                  src="./assets/icons/instagram.svg"
+                  src="./assets/images/icons/instagram.svg"
                   alt="Instagram Icon"
               /></a>
               <a href="#"
                 ><img
                   class="img-fluid pe-2"
-                  src="./assets/icons/linkedin.svg"
+                  src="./assets/images/icons/linkedin.svg"
                   alt="Linkedin Icon"
               /></a>
             </div>
@@ -505,8 +566,17 @@
       </section>
     </footer>
     <!-- footer end -->
-    <!-- javascript file -->
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js file -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- owl js file -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- custom js file -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
