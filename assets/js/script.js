@@ -13,6 +13,11 @@ $(".carousel-one").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplayTimeout: 7000,
+  slideBy: 3,
+  smartSpeed: 800,
   responsive: {
     0: {
       items: 1,
@@ -30,6 +35,11 @@ $(".carousel-two").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplayTimeout: 7000,
+  slideBy: 3,
+  smartSpeed: 800,
   responsive: {
     0: {
       items: 1,
